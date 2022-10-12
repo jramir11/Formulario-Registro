@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="post">
+
+        <div>
+            <label>Nombre: *</label>
+            <input type="text" name="nombre" 
+            placeholder="Nombre..." >
+        </div>
+
+        <div>
+            <label>Apellido: *</label>
+            <input type="text" name="apellido" 
+            placeholder="Apellido..." >
+        </div>
+
+        <div>
+            <label>Email: *</label>
+            <input type="text" name="correo" 
+            placeholder="email..." >
+        </div>
+
+        <div>
+            <label>clave: *</label>
+            <input type="password" name="clave" 
+            placeholder="clave de acceso..." >
+        </div>
+
+        <div>
+            <label>confirma clave: *</label>
+            <input type="password" name="confirmaclave" 
+            placeholder="confirma clave de acceso..." >
+        </div>
+
+        <div>
+            <label>fecha Nacimiento: </label>
+            <input type="date" name="dob">
+        </div>
+        
+        <p>Genero :</p>
+        <select name="genero">
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>No Binario</option>
+            <option>Prefiero no Responder</option>
+        </select>
+
+        <div>
+            <p>Descricion Corta acerca de mi:</p>
+            <textarea name="comment" cols="20" rows="3"></textarea>
+        </div>
+
+        <div>
+            <label>Lenguaje Favorito: </label>
+            <select name="LenguajeFavorito">
+                <option>Javascript</option>
+                <option>Cobol</option>
+                <option>Html</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" name="actualizaciones" 
+            id="actualizaciones" checked >
+            <label for="actualizaciones">Si, Me gustaría recibir Actualizaciones por correo!</label>
+        </div>
+
+        <input type="submit" value="Crea la Cuenta" >
+
+        <p>* indica que es un campo requerido</p>
+    </form>
+</body>
+</html>
